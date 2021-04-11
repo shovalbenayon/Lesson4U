@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "948967693516",
+    "firebase_url": "https://lesson4u-26ee8.firebaseio.com",
+    "project_id": "lesson4u-26ee8",
+    "storage_bucket": "lesson4u-26ee8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948967693516:android:6b6ced7512c77ba74eb669",
+        "android_client_info": {
+          "package_name": "com.example.lesson4u"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948967693516-cigbm4gor1ej4346li06ke09budvaa0o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1dzQp0EFJkWkwR2O34TQfJDf2ExFFzfA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948967693516-cigbm4gor1ej4346li06ke09budvaa0o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

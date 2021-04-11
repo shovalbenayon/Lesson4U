@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/booksback"
+    tools:context=".LessonDetailsActivity">
+
+    <TextView
+        android:id="@+id/tvTeacherName"
+        android:layout_width="230dp"
+        android:layout_height="25dp"
+        android:fontFamily="@font/abeezee_italic"
+        android:text="Name of Teacher"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvSubject"
+        app:layout_constraintTop_toTopOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.235" />
+
+    <TextView
+        android:id="@+id/tvSubject"
+        android:layout_width="230dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="64dp"
+        android:fontFamily="@font/abeezee_italic"
+        android:text="subject"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.902" />
+
+    <TextView
+        android:id="@+id/tvLevel"
+        android:layout_width="230dp"
+        android:layout_height="55dp"
+        android:fontFamily="@font/abeezee_italic"
+        android:text="level"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvSubject"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.464" />
+
+    <Button
+        android:id="@+id/bChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abeezee_italic"
+        android:text="choose this class"
+        app:backgroundTint="#AD00838F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.837" />
+
+    <TextView
+        android:id="@+id/pp"
+        android:layout_width="230dp"
+        android:layout_height="27dp"
+        android:fontFamily="@font/abeezee_italic"
+        android:text="price"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/bChoose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvTime"
+        app:layout_constraintTop_toBottomOf="@+id/tvTime"
+        app:layout_constraintVertical_bias="0.177" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="230dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="144dp"
+        android:fontFamily="@font/abeezee_italic"
+        android:text="time"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/bChoose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvSubject"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.967" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="236dp"
+        android:layout_height="142dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067"
+        app:srcCompat="@drawable/logo_transparent_background" />
+</androidx.constraintlayout.widget.ConstraintLayout>

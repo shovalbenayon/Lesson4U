@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/booksback"
+    tools:context=".AddLessonActivity">
+
+    <Spinner
+        android:id="@+id/chooseTime"
+        android:layout_width="293dp"
+        android:layout_height="45dp"
+        android:entries="@array/hours"
+        android:hint="Choose time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623" />
+
+    <Button
+        android:id="@+id/addLessonBtn"
+        android:layout_width="92dp"
+        android:layout_height="47dp"
+        android:text="Add"
+        app:backgroundTint="#B000838F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.799" />
+
+    <EditText
+        android:id="@+id/LessonPrice"
+        android:layout_width="293dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:fontFamily="@font/abeezee_italic"
+        android:hint="NIS"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toTopOf="@+id/addLessonBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/chooseLessonSubSpinner"
+        android:layout_width="293dp"
+        android:layout_height="45dp"
+        android:entries="@array/subjects"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addLessonTxt" />
+
+    <Spinner
+        android:id="@+id/chooseLevelSpinner"
+        android:layout_width="293dp"
+        android:layout_height="45dp"
+        android:entries="@array/subj_levels"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseLessonSubSpinner" />
+
+    <TextView
+        android:id="@+id/addLessonTxt"
+        android:layout_width="178dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/abeezee_italic"
+        android:text="Add Lesson"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="157dp"
+        android:layout_height="138dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07"
+        app:srcCompat="@drawable/logo_transparent_background" />
+
+    <Button
+        android:id="@+id/date"
+        android:layout_width="293dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/abeezee_italic"
+        android:text="Date"
+        app:backgroundTint="#B000838F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.474" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="239dp"
+        android:layout_height="29dp"
+        android:fontFamily="@font/abeezee_italic"
+        android:text="Choose Starting Time:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.343"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.539" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
